@@ -10,5 +10,6 @@
     <li>Add new routes at <code>web/routers/application_router.ex</code></li>
     <li>Deploy to production with <code>MIX_ENV=prod mix do compile, server</code></li>
   </ol>
+  <img src="/static/images/hooray.jpeg" width="548" height="420" alt="Hooray">
 </body>
 </html>
