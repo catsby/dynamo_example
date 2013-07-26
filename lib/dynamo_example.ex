@@ -1,4 +1,4 @@
-defmodule AnotherDynamo do
+defmodule DynamoExample do
   use Application.Behaviour
 
   @doc """
@@ -6,6 +6,6 @@ defmodule AnotherDynamo do
   application and its Dynamos.
   """
   def start(_type, _args) do
-    AnotherDynamo.Dynamo.start_link([max_restarts: 5, max_seconds: 5])
+    DynamoExample.Dynamo.start_link([max_restarts: 5, max_seconds: 5])
   end
 end

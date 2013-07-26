@@ -1,24 +1,24 @@
-defmodule AnotherDynamo.Mixfile do
+defmodule DynamoExample.Mixfile do
   use Mix.Project
 
   def project do
-    [ app: :another_dynamo,
+    [ app: :dynamo_example,
       version: "0.0.1",
-      dynamos: [AnotherDynamo.Dynamo],
+      dynamos: [DynamoExample.Dynamo],
       compilers: [:elixir, :dynamo, :app],
       env: [prod: [compile_path: "ebin"]],
-      compile_path: "tmp/#{Mix.env}/another_dynamo/ebin",
+      compile_path: "tmp/#{Mix.env}/dynamo_example/ebin",
       deps: deps ]
   end
 
   # Configuration for the OTP application
   def application do
     [ applications: [:cowboy, :dynamo],
-      mod: { AnotherDynamo, [] } ]
+      mod: { DynamoExample, [] } ]
   end
 
   defp deps do
-    [ { :cowboy, %r(.*), github: "extend/cowboy" },
+    [ { :cowboy, github: "extend/cowboy" },
       { :dynamo, "0.1.0.dev", github: "elixir-lang/dynamo" } ]
   end
 end

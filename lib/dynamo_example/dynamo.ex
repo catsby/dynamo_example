@@ -1,4 +1,4 @@
-defmodule AnotherDynamo.Dynamo do
+defmodule DynamoExample.Dynamo do
   use Dynamo
 
   config :dynamo,
@@ -6,7 +6,7 @@ defmodule AnotherDynamo.Dynamo do
     env: Mix.env,
 
     # The OTP application associated to this Dynamo
-    otp_app: :another_dynamo,
+    otp_app: :dynamo_example,
 
     # The endpoint to dispatch requests to
     endpoint: ApplicationRouter,
@@ -19,8 +19,8 @@ defmodule AnotherDynamo.Dynamo do
   # config :dynamo,
   #   session_store: Session.CookieStore,
   #   session_options:
-  #     [ key: "_another_dynamo_session",
-  #       secret: "LLBiRv1OwtMZlwmNWNHxiDguOV6C3AQngKj2X9l4yQKD1lCom1GooEczGGU4+VgM"]
+  #     [ key: "_a_new_dynamo_session",
+  #       secret: "aGJ/p1iejksevW2uQnQkTXZ3kiqTlGHzmQfd15WBEtoTEIroUvdi3jufHvlyOxEp"]
 
   # Default functionality available in templates
   templates do

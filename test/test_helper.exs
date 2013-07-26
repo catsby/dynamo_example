@@ -1,8 +1,4 @@
-Dynamo.under_test(AnotherDynamo.Dynamo)
-Dynamo.Loader.enable
-ExUnit.start
-
-defmodule AnotherDynamo.TestCase do
+defmodule DynamoExample.TestCase do
   use ExUnit.CaseTemplate
 
   # Enable code reloading on test cases
